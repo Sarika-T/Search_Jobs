@@ -1,0 +1,62 @@
+@mixin responsive($breakpoint) {
+    @if $breakpoint == xsm {
+        @media only screen and (max-width: 280px) {
+            //320 480(520)
+            @content;
+        }
+    }
+    @if $breakpoint == sm {
+        @media only screen and (max-width: 480px) {
+            //320 480(520)
+            @content;
+        }
+    }
+    @if $breakpoint == md-lg {
+        @media only screen and (max-width: 920px) {
+            @content;
+        }
+    }
+    @if $breakpoint == md {
+        @media only screen and (max-width: 720px) {
+            @content;
+        }
+    }
+    @if $breakpoint == lg {
+        @media only screen and (max-width: 1024px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == xxl {
+        @media only screen and (max-width: 1440px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == xl {
+    //
+        @media only screen and (min-width: 1024px) {
+            @content;
+        }
+    }
+    @if $breakpoint == xl-lg {
+        @media only screen and (max-width: 1180px) {
+            @content;
+        }
+    }
+    @if $breakpoint == landscape {
+        @media only screen and (max-width: 1180px) and (orientation: 'landscape') {
+            @content;
+        }
+    }
+    @if $breakpoint == landscape-md {
+        @media only screen and (max-width: 1024px) and (orientation: 'landscape') {
+            @content;
+        }
+    }
+    @if $breakpoint == landscape-sm {
+        @media only screen and (max-width: 720px) and (orientation: 'landscape') {
+            @content;
+        }
+    }
+}

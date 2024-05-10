@@ -1,0 +1,65 @@
+@import '../../assests/mixin.scss';
+
+.searchcontent{
+    &-col{
+        &-header{
+            align-items: center;
+            border-radius: 10px;
+            display: flex;
+            height: 80px;
+            box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+            &-image{
+                width: 3%;
+                margin-left: 20px;
+                @include responsive(md){
+                    width: 7%;
+                }
+                &-text{
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin-left: 8px;
+                    width: 70%;
+                    justify-content: start;
+                    display: flex;
+                }
+            }
+            &-chatbot{
+                display: flex;
+                justify-content: end;
+                &-image{
+                    width: 20%;
+                    @include responsive(md){
+                        width: 30%;
+                    }
+                }
+            }
+        }
+        &-body{
+            padding: 20px;
+            &-news {
+                height: 60px;
+                margin-left: 20px;
+                border: 2px solid white;
+                border-radius: 20px;
+                background-color: lightgreen;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                @include responsive(md){
+                    height: 100px;
+                    margin-left: 0;
+                }
+            }
+            &-tabs{
+                align-items: center;
+                display: flex;
+               @include responsive(md) {
+                   width: 100%;
+               }
+            }
+            &-cards{
+                margin-top: 30px;
+            }
+        }
+    }
+}

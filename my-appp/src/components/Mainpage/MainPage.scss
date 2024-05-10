@@ -1,0 +1,30 @@
+@import '../../assests/mixin.scss';
+
+.mainpage{
+    &-content{
+        width: 100%;
+        height: 100%;
+        font-family: none;
+        display: flex;
+        @include responsive(md){
+            flex-direction: column;
+        }
+        &-left{
+            width: 20%;
+            height: 400px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 1px 1px 0px rgba(104, 38, 38, 0.14);
+            @include responsive(md){
+                display: none;
+            }
+        }
+        &-middle{
+            width: 76%;
+            @include responsive(md) {
+                width: 100%;
+            }
+        }
+    }
+
+}

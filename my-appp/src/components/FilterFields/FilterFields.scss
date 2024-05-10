@@ -1,0 +1,13 @@
+@import '../../assests/mixin.scss';
+
+.filterfields {
+    &-page{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        gap: 20px;
+        margin-top: 20px;
+        @include responsive(md){
+            grid-template-columns: 1fr;
+        }
+    }
+}
